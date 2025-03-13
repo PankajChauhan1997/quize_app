@@ -5,8 +5,8 @@
 5    android:versionName="1.0.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="16"
-9        android:targetSdkVersion="31" />
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="33" />
 10    <!--
 11         Flutter needs it to communicate with the running application
 12         to allow setting breakpoints, to provide hot reload, etc.
@@ -24,7 +24,7 @@
 21        android:label="Dabba_Quiz" >
 22        <activity
 23            android:name="com.example.quize_app.MainActivity"
-24            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+24            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboard|keyboardHidden|uiMode"
 25            android:exported="true"
 26            android:hardwareAccelerated="true"
 27            android:launchMode="singleTop"
@@ -32,7 +32,7 @@
 29            android:windowSoftInputMode="adjustResize" >
 30
 31            <!--
-32                 Specifies an Android theme to apply to this Activity as soon as
+32            Specifies an Android theme to apply to this Activity as soon as
 33                 the Android process has started. This theme is visible to the user
 34                 while the Flutter UI initializes. After that, this theme continues
 35                 to determine the Window background behind the Flutter UI.
